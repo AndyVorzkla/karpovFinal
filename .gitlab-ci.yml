@@ -32,6 +32,6 @@ before_script:
 
 test:
   script:
-    - nbqa flake8 --ignore=E402,W291,W293 --max-line-length=120 ./*.ipynb
+    - nbqa flake8 --ignore=E402,W291,W293 --max-line-length=120 --show-source ./*.ipynb
   only:
     - merge_requests
